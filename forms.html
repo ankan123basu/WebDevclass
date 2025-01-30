@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML practical</title>
+</head>
+<body>
+<form action="">
+    <label for="uname">Enter name:</label>
+    <input type="text" name="uname" id="uname" size="30" maxlength="5" placeholder="Enter name" value="Ria">
+    <br>
+    <label for="pass">Enter password</label>
+    <input type="password" name="pass" id="pass" placeholder="enter password">
+    <br>
+    <br>
+    <label for="email1">enter email</label>
+    <input type="email" name="email1" id="email1" required>
+ <br><br>
+
+ <input type="submit" name="submit form" id="submit form" value="submit form">
+
+ <label for="review">write a review</label><br>
+ <textarea name="review" id="review" rows="6" cols="40"></textarea>
+<br>
+<br>
+ <label for="hobby">Choose your hobby</label>
+ <input type ="checkbox" name="hobby" id="hobby" value="Cook">cooking
+ <input type ="checkbox" name="hobby" id="hobby"checked value="Read"> reading
+ <input type ="checkbox" name="hobby" id="hobby"value="sleep">sleeping
+
+ <!-- if value not set then on stored on data base -->
+ <br>
+ <label for="pro">select prog lang</label>
+ <input type="radio" name="pro" id="btech">
+ <label for="btech">Btech</label>
+ <input type="radio" name="pro" id="bca" checked>
+ <label for="bca">BCA</label>
+ <input type="radio" name="pro" id="bpt" checked>
+ <label for="bpt">BPT</label>
+<br>
+ <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+
+  <br>
+  <label for="statesel">select state</label>
+  <select name="statesel" id="statesel" size="3" multiple>
+    <option value="chooset">Choose your state</option>
+    <option value="punjab">punjab</option>
+    <option value="ktr">kerala</option>
+    <option value="hp" selected>himachal pradesh</option>
+    <option value="hr">haryana</option>
+
+  </select>
+  <br>
+  <label for="filesel">choose file</label>
+  <input type="file" name="filesel" id="filesel" accept="image/*">
+  <br>
+  <label for="reseltfel">reset</label>
+  <input type="reset" name="reseltfel" id="reseltfel">
+  <input type="image" name="imagesel" id="imagesel" src="images\submit-button-png-9.png" width="100" height="40">
+</form>
+</body>
+<!-- GET METHOD has a limited size of 3000 chars -->

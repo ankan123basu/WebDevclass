@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Places</title>
+    <style>
+        .container {
+            border: solid black 4px;
+            padding: 10px;
+            background-color: burlywood;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* Create six equal columns */
+            gap: 10px; /* Add spacing between grid items */
+        }
+        .item {
+            border: solid black 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Ensure images and captions stay within bounds */
+        }
+        #a {
+            grid-column: span 6;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #b {
+            grid-column: span 6;
+            height: 350px;
+        }
+        #c, #d, #e {
+            height: 250px;
+        }
+        #c {
+            grid-column: span 2;
+        }
+        #d {
+            grid-column: 3 / span 2;
+        }
+        #e {
+            grid-column: 5 / 7;
+        }
+        #f {
+            grid-column: span 3;
+            height: 250px;
+        }
+        #g {
+            grid-column: 4 / 7;
+            height: 250px;
+        }
+        #h {
+            grid-column: span 6;
+            height: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        figure {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+            height: calc(100% - 25px); /* Adjust height to accommodate caption */
+            object-fit: cover; /* Ensures images fit the container without distortion */
+        }
+        figcaption {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 5px;
+            height: 20px; /* Set consistent height for captions */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="a">Famous Tourism Places of India</div>
+        
+        <div class="item" id="b">
+            <figure>
+                <img src="images\63282406.webp" alt="Tourism Image 1">
+                <figcaption>Taj mahal, agra</figcaption>
+            </figure>
+        </div>
+        
+        <div class="item" id="c">
+            <figure>
+                <img src="images\1581765398_amritsar-3083693.avif" alt="Tourism Image 2">
+                <figcaption>golden temple, punjab</figcaption>
+            </figure>
+        </div>
+        
+        <div class="item" id="d">
+            <figure>
+                <img src="images\m_activities_delhi_red_fort_l_341_817.avif" alt="Tourism Image 3">
+                <figcaption>Red Fort, Delhi</figcaption>
+            </figure>
+        </div>
+        
+        <div class="item" id="e">
+            <figure>
+                <img src="images\self-drive-car-rental-delhi-gurgaon-noida_revv-blog.jpg" alt="Tourism Image 4">
+                <figcaption>Gateway of India, Delhi</figcaption>
+            </figure>
+        </div>
+        
+        <div class="item" id="f">
+            <figure>
+                <figcaption>Description of famous places</figcaption>
+            </figure>
+        </div>
+        
+        <div class="item" id="g">
+            <figure>
+                <img src="images\JAIPUR.jpg" alt="Tourism Image 5">
+                <figcaption>Meenakshi Temple, Madurai</figcaption>
+            </figure>
+        </div>
+        
+        <div class="item" id="h">Footer: Explore Incredible India</div>
+    </div>
+</body>
+</html>
